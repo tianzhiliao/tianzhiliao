@@ -7,6 +7,9 @@
 
 ## What I'm building
 
+**[ATS Posting Scanner](https://github.com/tianzhiliao/ats-posting-scanner)** - Job-board scanner over three official public APIs (Python, stdlib only).
+Normalizes Ashby, Lever and Greenhouse into one schema, then verifies each posting's **true first-published date** - Greenhouse's `updated_at` reflects the last edit, and on one run it understated posting age by 3x or more for **54% of candidates** (worst case: 24.9 days reported vs 716.7 actual).
+
 **[Math Kangaroo Prep](https://github.com/tianzhiliao/math-kangaroo)** — Full-stack contest practice platform (Next.js 14 + FastAPI).
 A Python pipeline turns 20+ contest PDFs into ~600 structured questions with verified answer keys. AI explanations run through strict JSON schema output with **answer-contradiction detection** — the model's stated answer is checked against the verified key before anything reaches a student — plus a retry-with-constraint loop and a safe fallback.
 
